@@ -1,0 +1,7 @@
+#!/bin/bash
+
+HUBOT_IRC_SERVER=<your-irc-server> \
+HUBOT_IRC_ROOMS="<your-irc-room>" \
+HUBOT_IRC_NICK="testbot" \
+bin/hubot -a irc --name testbot
+

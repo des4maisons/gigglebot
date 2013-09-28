@@ -1,6 +1,8 @@
 # Description:
 #   Greets a user when they enter the channel with a personalized nickname.
 #
+# Author:
+#   ysim
 
 greetings = [ "hi", "hey", "hello", "o hai" ]
 

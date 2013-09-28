@@ -7,7 +7,8 @@
 greetings = [ "hi", "hey", "hello", "o hai" ]
 
 users =
-  des4maisons: [ "stompy", "moogooroot", "moog", "margatron", "bossy" ]
+  des4maisons: [ "stompy", "moogooroot", "moog", "margatron", "bossy", \
+    "margaroo" ]
   GloomyBear: [ "danni", "oy" ]
   yiqing: [ "giggles", "yi qing" ]
   sarahferguson: [ "sarah" ]

@@ -11,7 +11,7 @@ users =
     "margaroo" ]
   GloomyBear: [ "danni", "oy" ]
   yiqing: [ "giggles", "yi qing" ]
-  sarahferguson: [ "sarah" ]
+  SarahFerguson: [ "sarah" ]
   nox: [ "nox" ]
 
 addressees = [ "everyone", "guys" ]

@@ -39,3 +39,8 @@ module.exports = (robot) ->
       response.send "#{greeting} stranger"
     response.send question
 
+  robot.hear /(hi|hey|hello) gigglebot/i, (msg) ->
+    speaker = msg.message.user.name
+    speaker_nickname = msg.random users[speaker]
+    random_greeting = msg.random greetings
+    msg.send "#{random_greeting} #{speaker_nickname}!"

@@ -25,13 +25,14 @@ questions = [
 ]
 
 module.exports = (robot) ->
+
   robot.enter (response) ->
     entered_user = response.message.user.name
     greeting = response.random greetings
     question = response.random questions
     if entered_user of users
       nickname = response.random users[entered_user]
-      response.send "#{greeting} #{nickname}"
+      response.send "#{greeting} #{nickname}!"
     else if entered_user == "gigglebot"
       response.send "#{greeting} everyone"
     else

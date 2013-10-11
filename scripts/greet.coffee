@@ -4,24 +4,24 @@
 # Author:
 #   ysim
 
-greetings = [ "hi", "hey", "hello", "o hai" ]
+greetings = [ "hi", "hey" ]
 
 users =
   des4maisons: [ "stompy", "moogooroot", "moog", "margatron", "bossy", \
-    "margaroo" ]
+    "margaroo", "marguerite des trois migrations" ]
   GloomyBear: [ "danni", "oy" ]
   yiqing: [ "giggles", "yi qing" ]
   SarahFerguson: [ "sarah" ]
   nox: [ "nox" ]
+  Shell: [ "root" ]
 
 addressees = [ "everyone", "guys" ]
 
 questions = [
   "how's it going?",
   "what's up?",
-  "wassup",
+  "how's everyone doing?",
   "how goes it?",
-  "how's life?"
 ]
 
 module.exports = (robot) ->

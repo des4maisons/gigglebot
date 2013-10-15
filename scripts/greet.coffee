@@ -20,8 +20,8 @@ addressees = [ "everyone", "guys" ]
 questions = [
   "how's it going?",
   "what's up?",
-  "how's everyone doing?",
   "how goes it?",
+  "how you doing?",
 ]
 
 module.exports = (robot) ->
@@ -29,7 +29,6 @@ module.exports = (robot) ->
   robot.enter (response) ->
     entered_user = response.message.user.name
     greeting = response.random greetings
-    question = response.random questions
     if entered_user of users
       nickname = response.random users[entered_user]
       response.send "#{greeting} #{nickname}!"
@@ -37,10 +36,10 @@ module.exports = (robot) ->
       response.send "#{greeting} everyone"
     else
       response.send "#{greeting} stranger"
-    response.send question
 
   robot.hear /(hi|hey|hello) gigglebot/i, (msg) ->
     speaker = msg.message.user.name
     speaker_nickname = msg.random users[speaker]
     random_greeting = msg.random greetings
     msg.send "#{random_greeting} #{speaker_nickname}!"
+    msg.send msg.random questions
